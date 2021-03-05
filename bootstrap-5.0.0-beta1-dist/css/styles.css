@@ -1,0 +1,443 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    font-size: 17px;
+}
+
+
+/* Navigation Bar */
+
+#brandName {
+    color: #f19506;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
+    transition: .7s;
+}
+#brandName:hover {
+    color: #dd3a55;
+    transition: .7s;
+}
+.nav-link {
+    padding-top: 11px;
+}
+#mainPageTop,
+#destPageTop,
+#bookPageTop {
+    height: 50px;
+    width: 100%;
+}
+
+
+/* Carousel */
+
+#welcomeHeading {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 58px;
+    margin: 0;
+}
+.carousel-caption {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.carousel-content {
+    position: relative;
+    z-index: 5;
+    font-family: 'Prompt', sans-serif;
+    font-size: 22px;
+    text-shadow: 1px 1px 1px #222;
+}
+.carousel-content-background {
+    position: absolute;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Page Content */
+
+.headings {
+    font-size: 50px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    color: #f19506;
+    transition: .7s;
+}
+.headings:hover {
+    color: #dd3a55;
+    transition: .7s;
+}
+a.card-link {
+    text-decoration: none;
+    color: #dd3a55;
+}
+a.card-link:hover h3 {
+    color: #f19506;
+}
+.main-buttons {
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #dd3a55;
+    transition: .7s;
+}
+.main-buttons:hover,
+.subscribe-button button:hover,
+.submit-button button:hover {
+    color: black;
+    transition: .7s;
+}
+
+
+/* Subscription Form */
+
+.subscription-background {
+    background-image: url("../../images/box.jpg");
+    width: 100%;
+    padding: 3%;
+}
+.subscription-heading {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+.subscription-text {
+    font-size: 20px;
+    color: white;
+}
+.subscription-form {
+    margin: 0 auto 0;
+    padding: 10px;
+    position: relative;
+}
+#subscriptionFormBackground {
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#subscriptionFormContent {
+    z-index: 5;
+    position: relative;
+}
+.subscribe-button {
+    display: flex;
+    justify-content: center;
+}
+.submit-button {
+    display: flex;
+    justify-content: start;
+}
+#subEmailError {
+    display: none;
+}
+#subEmailEmpty {
+    display: none;
+}
+
+
+/* Covered Topics */
+
+.topics h6 {
+    font-weight: bold;
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.1rem;
+}
+.topics-img-centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: #dd3a55;
+    margin-bottom: 10px;
+    transition: .7s;
+}
+.topics-img-centered:hover {
+    color: #f19506;
+    transition: .7s;
+}
+
+
+/* Apps Post */
+
+.apps-post-background {
+    background-image: url("../../images/flowers2.jpg");
+    margin: 0;
+}
+.form-for-comments button {
+    font-size: 15px;
+}
+
+
+/* Checklist Post */
+
+.checklist-background {
+    background-image: url("../../images/flowers3.jpg");
+    margin: 0;
+}
+.post-content {
+    margin-top: 90px;
+    margin-bottom: 70px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-family: 'Prompt', sans-serif;
+}
+.post-link {
+    text-decoration: none;
+    color: black;
+}
+.post-link:hover {
+    color: #f19506;
+}
+.post-title {
+    color: #dd3a55;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.post-title:hover {
+    color: #f19506;
+}
+.post-date {
+    text-align: right;
+    font-family: 'Abril Fatface', cursive;
+}
+
+
+/* Comments Section */
+
+.form-for-comments {
+    font-size: smaller;
+    margin-top: 30px;
+    background-color: #f8f3e8;
+    padding: 20px;
+}
+#appsCommentText,
+#checklistCommentText {
+    height: 150px;
+}
+.form-for-comments button {
+    width: 140px;
+}
+.comment-name {
+    color: #dd3a55;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.comment-text {
+    margin-left: 10px;
+    border-left: 2px solid #f19506;
+    padding-left: 10px;
+}
+.comment-error-message {
+    display: none;
+    margin-left: 10px;
+    margin-bottom: 0;
+    line-height: 37px;
+    color: #dd3a55;
+}
+
+
+/* Destinations Post */
+
+#destPicture {
+    position: relative;
+}
+#destPicture div {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    font-size: 2vw;
+    text-shadow: 1px 1px 1px white;
+}
+#destPicture div:hover {
+    color: white;
+    text-shadow: 1px 1px 1px #222;
+}
+.dest-post-content {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-family: 'Prompt', sans-serif;
+}
+#destHeading {
+    font-size: 1.1vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.dest-container {
+    position: relative;
+    padding: 10px;
+}
+.dest-container-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 2.2em;
+    text-shadow: 1px 1px 1px #222;
+    transition: .7s;
+}
+.dest-container a img {
+    border: 1px solid transparent;
+    width: 100%;
+    transition: .7s;
+}
+.dest-container a:hover .dest-container-text {
+    color: #f19506;
+    font-size: 2.3em;
+    transition: .7s;
+}
+.dest-container a:hover img {
+    border: 1px solid #f19506;
+    opacity: 0.9;
+    transition: .7s;
+}
+
+
+/* Book Post */
+
+#bookHeaderBackground {
+    position: relative;
+}
+.book-content-background {
+    background-color: #f6f6f6;
+}
+#bookHeaderTextContainer {
+    position: relative;
+}
+#bookHeaderText {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 12px;
+}
+.book-heading {
+    text-shadow: 1px 1px 1px white;
+    font-size: 1.9vw;
+}
+.book-header-text {
+    font-size: 1.4vw;
+}
+#bookHeaderBackgroundSmall {
+    display: none;
+}
+#founderSmall {
+    width: 75%;
+}
+#founderName {
+    margin: 20px;
+}
+.book-reviews {
+    height: 340px;
+    background-color: #1a2530;
+    position: relative;
+}
+.book-reviews .carousel-inner {
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.book-reviews-content {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    height: 200px;
+    transform: translateY(-50%);
+}
+.bg-warning svg {
+    float: left;
+    margin-right: 20px;
+}
+.book-cost {
+    color: #f19506;
+    transition: .7s;
+}
+.main-buttons:hover .book-cost {
+    color: #dd3a55;
+    transition: .7s;
+}
+#bookPageCarousel h2 {
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+#bookPageCarousel .text-white p {
+    font-size: 1.3rem;
+}
+
+
+/* Book Modal */
+
+.modal-content {
+    background-image: url("../../images/box-modal-dark.jpg");
+}
+.modalText {
+    font-size: 20px;
+    transform: translateY(50%);
+}
+.modal-header {
+    font-size: 25px;
+}
+.modal-header:hover,
+.modalText:hover {
+    text-shadow: 1px 1px 1px antiquewhite;
+}
+
+
+/* Footer */
+
+.footer-name {
+    color: #f19506;
+}
+a.footer-name {
+    text-decoration: none;
+}
+a.footer-name svg {
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    color: #f19506;
+    transition: .7s;
+}
+a.footer-name:hover svg {
+    color: #dd3a55;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    transition: .7s;
+}
+
+
+/* Page Navigation Buttons */
+
+.page-nav-buttons {
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+    opacity: 0;
+    z-index: 10;
+    transition: 2s;
+    visibility: hidden;
+}
+.page-nav-buttons a  {
+    color: black;
+    text-decoration: none;
+}
+.page-nav-buttons a:hover svg {
+    color: #dd3a55;
+}

@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Manticore Travel Blog</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/styles.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/styles-medium-device.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/styles-small-device.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/styles-extra-small-device.css">
+
+    <script src="bootstrap-5.0.0-beta1-dist/js/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap-5.0.0-beta1-dist/js/popper.min.js"></script>
+    <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-5.0.0-beta1-dist/js/mainScript.js"></script>
+
+    <!--font style-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fjalla+One&family=Prompt:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!--Navbar-->
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" role="navigation">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.htm" aria-current="page"><span id="brandName">Manticore</span></a>
+        <button type="button" class="navbar-toggler"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <div class="navbar-nav">
+                <a href="destinations.htm" class="nav-link">Destinations</a>
+                <a href="book.htm" class="nav-link">Book</a>
+
+                <div class="nav-item dropdown">
+                    <a href="#" role="button" class="nav-link dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="navbarDropdown">More</a>
+                    <div class="dropdown-menu" role="menu" aria-labelledby="navbarDropdown">
+                        <a href="#" class="dropdown-item">Pictures</a>
+                        <a href="#" class="dropdown-item">Videos</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Stuff</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- Page Navigation Buttons-->
+
+<p class="page-nav-buttons">
+    <a href="checklistPost.htm" data-bs-placement="top" title="Previous Post">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+        </svg>
+    </a>
+    <a href="#appsPostTop" data-bs-placement="top" title="Go to Top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg>
+    </a>
+    <a href="#appsForm" data-bs-placement="top" title="Go to Bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+        </svg>
+    </a>
+    <a href="checklistPost.htm" data-bs-placement="top" title="Next Post">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+        </svg>
+    </a>
+</p>
+
+
+<!-- Post Content -->
+
+<div class="container-fluid" id="appsPostTop">
+
+    <div class="row">
+        <div class="col-lg-2 apps-post-background"></div>
+
+        <div class="post-content col-lg-8">
+
+            <h3 class="headings text-center mb-5">14 Essential Travel Apps for Backpackers</h3>
+
+            <p class="text-muted post-date">Posted on December 23, 2020</p>
+
+            <p>There are quite a few lists out there of best travel apps, but most of these are for people going on a quick holiday. If you’re going on a longer trip, you may want to load up your smartphone with some additional tools.</p>
+            <p>The following apps are especially useful if you’re going backpacking, if you’re travelling through multiple countries, or won’t have mobile data everywhere (as many of these apps can be used even when offline).</p>
+            <img class="img-fluid mx-auto d-block mb-3" src="images/apps.jpg" alt="Travel Apps">
+            <p>So let's get started.</p>
+
+            <h3 class="post-title mt-5 mb-3">#1 MAPS.me</h3>
+            <p><a class="post-link" target="_blank" href="https://play.google.com/store/apps/details?id=com.mapswithme.maps.pro&hl=ru&gl=US"><b>MAPS.me</b></a>
+                is an awesome maps app that lets you download map data for a country or region so you can use it even when you have no data connection.
+                This app was a serious life-saver when I was trying to find my way through the infinite windy alleyways of the medina in Fez, Morocco — not to mention many other places!</p>
+            <p>While Google Maps now also include a downloading function, I like the MAPS.me functionality better.
+                It also lets you more easily star specific locations for later reference.</p>
+
+            <h3 class="post-title mt-5 mb-3">#2 Splitwise</h3>
+            <img src="images/splitwise.jpg" class="img-fluid mx-auto d-block mb-3" alt="Splitwise">
+            <p>Are you traveling together? Then <a class="post-link" target="_blank" href="https://www.splitwise.com/"><b>Splitwise</b></a>
+                is just amazing for splitting your bills.</p>
+            <p>I use Splitwise all the time when I’m traveling with a group or even when I’m traveling with my girlfriend. You can easily add expenses to the list,
+                specify who it should be split with, and keep track of who’s paid.</p>
+            <p>The best feature is that you can automatically settle all your bills at the end of your trip. It looks at what everyone owes each other and then provides the simplest way for everyone to settle their bills.</p>
+
+            <h3 class="post-title mt-5 mb-3">#3 XE Currency</h3>
+            <p>The best way to avoid getting overcharged abroad (or just making costly mistakes) is to have the latest exchange rates with you at hand all the time.
+                <a class="post-link" target="_blank" href="https://www.xe.com/currencyconverter/"><b>XE Currency</b></a> doesn’t need to be connected to the internet to work.</p>
+
+            <h3 class="post-title mt-5 mb-3">#4 Hostelworld</h3>
+            <img src="images/hostelworld.jpg" class="img-fluid mx-auto d-block mb-3" alt="Hostelworld">
+            <p><a class="post-link" target="_blank" href="https://www.hostelworld.com/"><b>Hostelworld</b></a> is the biggest hostel booking site, so if you’re a budget traveller chances are you’ll be using this app a lot.
+                Once you’re already logged into your account, booking your next place to stay takes just a minute.
+                (Psst, I also have some tips for finding the best hostels.)</p>
+
+            <h3 class="post-title mt-5 mb-3">#5 Skyscanner</h3>
+            <p>The popular flight search engine <a class="post-link" target="_blank" href="https://www.skyscanner.net/"><b>Skyscanner</b></a>
+                has its own app, making it easier to search for flights on your smartphone or tablet. </p>
+
+            <h3 class="post-title mt-5 mb-3">#6 Momondo</h3>
+            <img src="images/momondo.jpg" class="img-fluid mx-auto d-block mb-3" alt="Momondo">
+            <p><a class="post-link" target="_blank" href="https://www.momondo.by/"><b>Momondo</b></a> is my other favorite flight search engine, and like Skyscanner it’s fully independent so it includes as many carriers as possible.
+                Get the most out of Momondo and Skyscanner by reading my tips and tricks for finding the cheapest flights.</p>
+
+            <h3 class="post-title mt-5 mb-3">#7 Pocket</h3>
+            <p><a class="post-link" target="_blank" href="https://getpocket.com/"><b>Pocket</b></a> lets you save any webpage for later reading.
+                Just hit the share icon and select the Pocket icon, and you’ll be able to pull up this article or blog post from the Pocket app later.
+                This is absolutely brilliant for stocking up on reading material before a long flight or bus journey.
+                Pocket now also lets you save videos for later viewing!</p>
+
+            <h3 class="post-title mt-5 mb-3">#8 Duolingo</h3>
+            <img src="images/duolingvo.jpeg" class="img-fluid mx-auto d-block mb-3" alt="Duolingo">
+            <p>What better time to learn a language than while you’re fully immersed in that language on a trip?
+                <a class="post-link" target="_blank" href="https://ru.duolingo.com/"><b>Duolingo</b></a> makes language learning fun by adding game-like scoring and progression systems.
+                It’s free and it’s excellent for learning the basics.</p>
+            <p>Unlock the Flirting pack and you can even learn such useful phrases as “I’m not drunk, I’m just intoxicated by you.” Hello there sexy locals.</p>
+
+            <h3 class="post-title mt-5 mb-3">#9 Rome2Rio</h3>
+            <p><a class="post-link" target="_blank" href="https://www.rome2rio.com/"><b>Rome2Rio</b></a>
+                is seriously the most amazing app for finding out transportation connections, even in the most remote places.
+                Type in where you are and where you’re going and you get a list of bus, train, flight, and self-drive options.</p>
+
+            <h3 class="post-title mt-5 mb-3">#10 Trail Wallet</h3>
+            <img src="images/wallet.jpg" class="img-fluid mx-auto d-block mb-3" alt="Trail Wallet">
+            <p><a class="post-link" target="_blank" href="https://www.rome2rio.com/"><b>Trail Wallet</b></a>
+                makes it easier to track your daily travel budget and expenses. Supports 200+ local currencies, daily budget targets, spending categories, and much more.</p>
+
+            <h3 class="post-title mt-5 mb-3">#11 Prey</h3>
+            <p><a class="post-link" target="_blank" href="https://preyproject.com/"><b>Prey</b></a>
+                helps you secure your smartphone, tablet, or laptop. It lets you track multiple devices in case it gets stolen or lost,
+                and uses GPS and camera pictures to help you recover a lost device. You can even wipe your devices remotely.</p>
+
+            <h3 class="post-title mt-5 mb-3">#12 Google Drive</h3>
+            <img src="images/googledrive.jpg" class="img-fluid mx-auto d-block mb-3" alt="Google Drive">
+            <p>Speaking of data security, be sure to back up your shit. Seriously, I’m sick of hearing travellers tell me sob stories about how they lost all their photos.
+                Make sure your phone is set up to sync with either Apple iCloud or with <a class="post-link" target="_blank" href="https://www.google.com/intl/ru/drive/"><b>Google Drive</b></a>
+                (or with a competing service such as Dropbox or Microsoft’s Onedrive). Google Drive gives you 15 GB for free. I personally use the $2 a month plan for
+                100 GB of cloud storage, which gets synced across all my devices.</p>
+
+            <h3 class="post-title mt-5 mb-3">#13 Skype</h3>
+            <p><a class="post-link" target="_blank" href="https://www.skype.com/ru/"><b>Skype</b></a> video calls are a fantastic way to keep up with your friends or family back home.
+                But it’s also a great way to make cheap international calls! I’ve found this extremely useful in cases where I had to call the support desk of my bank or insurer while abroad.
+                Just put a little credit in your Skype account and you can call numbers in your home country at local tariffs.</p>
+
+            <h3 class="post-title mt-5 mb-3">#14 Roadtrippers</h3>
+            <img src="images/roadtrippers.png" class="img-fluid mx-auto d-block mb-3" alt="Roadtrippers">
+            <p>You have a considerable amount of flexibility on a road trip, but planning them requires effort. Try
+                <a class="post-link" target="_blank" href=""><b>Roadtrippers</b></a> the next time you're inspired to grab a car and go.
+                The app allows you to map your route with up to 7 waypoints free of charge.
+                After that, there's an option to upgrade to Roadtrippers Plus.</p>
+            <p>Along your route, the app will recommend local food options, roadside attractions, scenic stops and more.
+                They even have pre-made guides for popular road trips.</p>
+
+
+<!-- Comments Section -->
+
+            <form id="appsForm" class="form-for-comments">
+                <p><b>Leave a comment</b><br>
+                    Your email address will not be published. Required fields are marked *</p>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="form-floating">
+                            <textarea class="form-control" id="appsCommentText"></textarea>
+                            <label for="appsCommentText">I want to share my opinion...</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="mb-3">
+                            <label for="appsCommentName" class="form-label">* Your name</label>
+                            <input type="text" class="form-control" id="appsCommentName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="appsCommentEmail" class="form-label">* Your email address</label>
+                            <input type="email" class="form-control comment-email" id="appsCommentEmail" placeholder="example@example.com">
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-button">
+                    <button type="submit" class="btn btn-outline-warning main-buttons"><b>Submit</b></button>
+                    <p id="appsCommentError" class="comment-error-message">Please fill all the fields.</p>
+                </div>
+            </form>
+
+            <div class="form-for-comments">
+                <p class="comment-name">Daneka Smith</p>
+                <p class="text-muted">January 2, 2020 at 7:02 pm</p>
+                <p class="comment-text">Just a heads up: I’ve been using Wander Wallet (on iOS only at the moment) to quickly/easily track expenses for recent trips—it’s beautiful and works perfectly. It’s free to download and try as well (but needs a $4 in-app purchase to log more than 25 expenses). Highly recommended for your next trip!</p>
+            </div>
+
+            <div class="form-for-comments">
+                <p class="comment-name">Ben Hillery</p>
+                <p class="text-muted">December 27, 2020 at 11:31 am</p>
+                <p class="comment-text">I usually use mapsme while travelling and it helps me a lot. but recently I always got problem with this aps since navigation does not run well. It suddently stop navigates me and after a vew minutes running again. It happen many times so i have ever passes the pointed address many times.
+                    Could you tell me how to solve the problem or you also got the same problem as I do. Thank a lot</p>
+            </div>
+
+            <div class="form-for-comments">
+                <p class="comment-name">Maria</p>
+                <p class="text-muted">December 24, 2020 at 10:44 pm</p>
+                <p class="comment-text">Great post!! I use most of these apps. Thanks!</p>
+            </div>
+
+        </div>
+
+        <div class="col-lg-2 apps-post-background"></div>
+    </div>
+</div>
+
+
+<!-- Subscription Box -->
+
+<div class="subscription-background">
+    <div class="subscription-heading text-center mb-1">Subscribe for More Tips and Inspiration</div>
+    <div class="subscription-text text-center mb-4">
+        <p class="mb-0">Leave your email down below to receive more travel tips from us each week.</p>
+        <p>You may easily unsubscribe any time you want :)</p>
+    </div>
+    <div class="subscription-form col-xl-4 offset-xl-4 border border-warning col-sm-8 offset-sm-2">
+        <form id="subscriptionFormContent">
+            <div class="form-floating">
+                <input type="email" class="form-control form-control-sm emails" id="emailForSubscription" aria-describedby="emailHelp" placeholder="name@example.com">
+                <label for="emailForSubscription" class="col-form-label">Email address </label>
+            </div>
+            <div id="subEmailHelp" class="form-text mb-3 text-white">We'll never share your email with anyone else.</div>
+            <div id="subEmailError" class="form-text mb-3 text-warning">Email address must meet the format example@example.com</div>
+            <div id="subEmailEmpty" class="form-text mb-3 text-warning">Please enter email address.</div>
+            <div class="subscribe-button">
+                <button type="submit" class="btn btn-outline-warning main-buttons"><b>Subscribe</b></button>
+            </div>
+        </form>
+        <div id="subscriptionFormBackground"></div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+
+<footer class="footer bg-dark">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <p class="text-center text-muted mt-3 mb-0 font-weight-bold">
+                    <span class="footer-name">Email:</span>
+                    <span class="user-select-all">katerina_gutich@mail.ru</span>
+                </p>
+                <p class="text-center text-muted mt-0 font-weight-bold">
+                    <span class="footer-name">Phone:</span>
+                    <span class="user-select-all">+37529-529-91-05</span></p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <p class="text-muted mt-3 mb-0 text-center">Copyright © 2021</p>
+                <p class="font-monospace text-white mt-0 mb-0 text-center user-select-all font-weight-bold">M A N T I C O R E</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <p class="text-white mt-3 mb-0 text-center">Follow</p>
+                <p class="font-monospace text-center mt-2 mb-3">
+                    <a class="footer-name mx-auto" href="https://www.facebook.com/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
+                    <a class="footer-name mx-auto" href="https://www.instagram.com/?hl=ru" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                    </a>
+                    <a class="footer-name mx-auto" href="https://twitter.com/?lang=ru" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                    </a>
+                    <a class="footer-name mx-auto" href="https://www.linkedin.com/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Modal -->
+
+<div class="modal fade" id="appsPostModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title text-white" id="staticBackdropLabel">THE ULTIMATE GUIDE TO <br><b>PLANNING AN EPIC ADVENTURE</b></span>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4 col-4">
+                        <img class="img-fluid" src="images/book-modal.jpg" alt="Book in Modal">
+                    </div>
+                    <div class="col-md-8 col-8">
+                        <div class="text-white modalText">
+                            <p>Do you wish you could travel more — but can never find the time or money? Or are you planning a trip but feeling overwhelmed by the whole process?</p>
+                            <p>Don't worry, because my inspirational & practical guide will help you at every step of the way...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn btn-outline-warning main-buttons" data-bs-dismiss="modal"><b>Close</b></button>
+                <a type="button" class="btn btn btn-outline-warning main-buttons" href="book.htm"><b>Learn More</b></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+
+/***** Small Devices Only *****/
+@media (min-width: 577px) and (max-width: 768px) {
+
+
+    #brandName {
+        font-size: 35px;
+    }
+    .nav-link,
+    .dropdown-item {
+        font-size: 25px;
+    }
+
+
+    /* Carousel */
+
+    #welcomeHeading {
+        font-size: 40px;
+    }
+    .carousel-content {
+        font-size: 35px;
+        line-height: 1.2;
+     }
+    .carousel-indicators {
+        display: none;
+    }
+    .carousel-caption {
+        margin-bottom: 40px;
+        padding: 5px;
+        left: 5%;
+        right: 5%;
+    }
+
+
+    /* Page Content */
+
+    .headings {
+        font-size: 55px;
+    }
+    a.card-link h3 {
+        font-size: 30px;
+    }
+    .card-text {
+        font-size: 22px;
+    }
+    .main-buttons {
+        font-size: 25px;
+    }
+
+
+    /* Subscription Form */
+
+    .subscription-heading {
+        font-size: 33px;
+        line-height: 1.2;
+    }
+    .subscription-text {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+
+    /* Covered Topics */
+
+    .topics h6 {
+        font-size: 1.2rem;
+    }
+    .topics svg {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    /* Checklist Post */
+
+    .post-content {
+        margin-top: 90px;
+        margin-bottom: 90px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+
+    /* Destinations Post */
+
+    #destPicture div {
+        transform: translateY(-85%);
+        font-size: 5vw;
+    }
+    #destHeading {
+        font-size: 4vw;
+    }
+    .dest-post-content {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+
+    /* Comments Sections */
+
+    .comment-error-message {
+        line-height: 1.5;
+    }
+
+    /* Book Post */
+
+    #bookPageTop {
+        height: 70px;
+        background-color: #f6f6f6;
+    }
+    #bookHeaderBackground {
+        max-height: 450px;
+    }
+    #bookHeaderText {
+        position: relative;
+        padding: 0;
+    }
+    .book-heading {
+        font-size: 3vw;
+        margin-bottom: 5px;
+    }
+    .book-header-text {
+        font-size: 2.4vw;
+        margin-bottom: 5px;
+    }
+    #founderSmall {
+        width: 50%;
+    }
+    #founderName {
+        margin-bottom: 50px;
+        font-size: 2.7vw;
+    }
+    .book-reviews {
+        height: 430px;
+    }
+    .book-reviews .carousel-inner {
+        width: 75%;
+    }
+    .book-reviews .carousel-item {
+        position: relative;
+        height: 280px;
+    }
+    .book-reviews .carousel-item .text-white {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    #founderLarge {
+        max-width: 340px;
+        float: left;
+        margin-right: 20px;
+    }
+    #bookPageCarousel h2 {
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+
+
+    /* Book Modal */
+
+    .modal-dialog {
+        max-width: 100%;
+    }
+    .modalText {
+        transform: translateY(0%);
+    }
+
+
+    /* Page Navigation Buttons */
+
+    .page-nav-buttons {
+        position: fixed;
+        bottom: 10%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}

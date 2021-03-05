@@ -1,0 +1,402 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Manticore: The Ultimate Guide</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/styles.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/styles-medium-device.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/styles-small-device.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/styles-extra-small-device.css">
+
+    <script src="bootstrap-5.0.0-beta1-dist/js/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap-5.0.0-beta1-dist/js/popper.min.js"></script>
+    <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-5.0.0-beta1-dist/js/mainScript.js"></script>
+
+    <!--font style-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fjalla+One&family=Prompt:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" role="navigation">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.htm" aria-current="page"><span id="brandName">Manticore</span></a>
+        <button type="button" class="navbar-toggler"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <div class="navbar-nav">
+                <a href="destinations.htm" class="nav-link">Destinations</a>
+                <a href="book.htm" class="nav-link active">Book</a>
+
+                <div class="nav-item dropdown">
+                    <a href="#" role="button" class="nav-link dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" id="navbarDropdown">More</a>
+                    <div class="dropdown-menu" role="menu" aria-labelledby="navbarDropdown">
+                        <a href="#" class="dropdown-item">Pictures</a>
+                        <a href="#" class="dropdown-item">Videos</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Stuff</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Header -->
+
+<div id="bookPageTop"></div>
+
+<div class="container-fluid book-content-background">
+
+     <!-- Extra Small Devices -->
+
+    <div id="bookHeaderBackgroundSmall">
+        <div>
+            <p class="book-heading p-2 mb-0">THE ULTIMATE GUIDE TO<br><b>PLANNING AN EPIC ADVENTURE</b></p>
+        </div>
+
+        <div class="text-center" id="bookHeaderPictureSmall">
+            <picture>
+                <source media="(min-width: 769px) and (max-width: 992px)" srcset="images/book-medium.png">
+                <source media="(min-width: 577px) and (max-width: 768px)" srcset="images/book-small.png">
+                <source media="(max-width: 576px)" srcset="images/book-extra-small.png">
+                <img class="img-fluid" src="images/book-large.png" alt="Book Header">
+            </picture>
+        </div>
+        <div id="bookHeaderTextSmall">
+            <p class="book-header-text">Planning a big trip abroad can be an overwhelming task.
+                Travel the World Without Worries makes it easy with in-depth advice that helps you quickly plan, pack and prepare — so that you can travel anywhere with confidence.</p>
+            <a type="button" href="#bookEditions" class="btn btn-warning main-buttons mt-2"><b>BUY NOW</b></a>
+        </div>
+    </div>
+
+
+    <!-- Other Devices -->
+
+    <div class="row" id="bookHeaderBackground">
+
+        <div class="col-lg-4 col-md-5 col-sm-6">
+            <picture id="bookHeaderPicture">
+                <source media="(min-width: 769px) and (max-width: 992px)" srcset="images/book-medium.png">
+                <source media="(min-width: 577px) and (max-width: 768px)" srcset="images/book-small.png">
+                <source media="(max-width: 576px)" srcset="images/book-extra-small.png">
+                <img class="img-fluid" src="images/book-large.png" alt="Book Header">
+            </picture>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-6" id="bookHeaderTextContainer">
+            <div id="bookHeaderText">
+                <p class="book-heading">THE ULTIMATE GUIDE TO<br><b>PLANNING AN EPIC<br>ADVENTURE</b></p>
+                <p class="book-header-text">Planning a big trip abroad can be an overwhelming task.
+                    Travel the World Without Worries makes it easy with in-depth advice that helps you quickly plan, pack and prepare — so that you can travel anywhere with confidence.</p>
+                <a type="button" href="#bookEditions" class="btn btn-warning main-buttons mt-2"><b>BUY NOW</b></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Page Navigation Buttons -->
+
+<p class="page-nav-buttons">
+    <a href="#bookPageTop" data-bs-toggle="tooltip" data-bs-placement="top" title="Go to Top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg>
+    </a>
+    <a href="#subscriptionFormBackground" data-bs-placement="top" title="Go to Bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+        </svg>
+    </a>
+</p>
+
+
+<!-- Post Content -->
+
+<div class="container-fluid">
+
+    <div class="row mt-5 mb-5">
+        <div class="col-lg-2 offset-lg-2 text-center col-md-4">
+            <img id="founderSmall" class="img-fluid" src="images/founder.png" alt="Founder Picture">
+            <p id="founderName" class="small"><b>Katherine</b><br>Founder of Manticore Travel Blog</p>
+        </div>
+        <div class="col-lg-6 col-md-8">
+            <h2>ANY OF THIS <b>SOUND FAMILIAR?</b></h2>
+            <p>Would you love to travel further and longer — but you can’t ever find the time or money, or you feel like something is holding you back?</p>
+            <p>Or are you planning a trip, but suddenly find yourself having a hundred different things to research, plan, or worry about, making you wonder just what you got yourself into?</p>
+            <p>Or do you want your next trip to finally be a REAL adventure filled with local experiences, where you go truly off the beaten track, and make new friends all over the world?</p>
+            <p><b>Then this book is for you!</b></p>
+            <p>I’ll guide and inspire you in a step-by-step way, sharing my hard-won advice that will prepare you for anything on the road. I’ve been travelling for over 10 years — and I can help you out!</p>
+        </div>
+    </div>
+
+
+<!--  Book Reviews  -->
+
+    <div class="book-reviews row">
+
+            <div id="bookPageCarousel" class="carousel slide py-2" data-bs-ride="carousel">
+
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-2">
+                    <h2 class="text-white w-100">WHAT <b><span class="text-warning">READERS ARE SAYING</span></b></h2>
+                </div>
+
+                <div class="carousel-inner col-lg-8 offset-lg-2 col-md-10 offset-md-2">
+                    <div class="carousel-item active">
+                        <div class="text-white">
+                            <p class="fw-bold">“Put simply, this book is the reason why I left for a 2-month trip with a 10kg backpack. Thanks for the great advice, Katherine!” </p>
+                            <p class="mb-0 text-muted">JESSE G. ON GOODREADS</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-white">
+                            <p class="fw-bold">“Earlier this week I had a vague notion that maybe going to SE Asia some day could be fun, in a hypothetical sense.
+                                My sister lent me the book, I read it in one day, and booked my flight to Bangkok the next morning.” </p>
+                            <p class="mb-0 text-muted">STEVEN, NY</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-white">
+                            <p class="fw-bold">“WARNING: May induce extreme desire to travel! Best travel book I have read. Inspirational and specifically instructive.
+                                Other travel books can speak in generals but this one has taught me so much that I truly feel prepared for a long international trip.
+                                Would recommend to any prospective world traveler” </p>
+                            <p class="mb-0 text-muted">AMAZON CUSTOMER</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-white">
+                            <p class="fw-bold">“Inspirational, comprehensive, open-minded, super informative and even funny! I really enjoyed reading this book and found it very inspiring.”</p>
+                            <p class="mb-0 text-muted">MARGUERITE</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-white">
+                            <p class="fw-bold">“One of the best pre trip purchases I made. The writing style makes it feel like you are chatting to a friend giving you some words of wisdom.”</p>
+                            <p class="mb-0 text-muted">THOMAS E., AMAZON UK</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#bookPageCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#bookPageCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+
+    </div>
+
+
+<!--  Q&A Section -->
+
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 book-content-background pe-4 ps-4 pb-4">
+            <h3 class="mb-4 mt-5"><b>Q&A</b></h3>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="post-title"><b>What will I learn from this book?</b></p>
+                    <p>This book will give you the confidence to travel anywhere and be sure that you'll have an amazing time! Whether it's planning a backpacking trip, gap year or career break, a round-the-world trip, or simply a shorter trip to parts unknown, by the time you turn the final page you'll know that you've got this.</p>
+                    <p>We'll unpack the many challenges and uncertainties that all travelers face, then reveal the secrets to finding adventure no matter how or where you travel. Above all, this in-depth guide will lay to rest all the little worries you may have before a trip — and turn it into pure excitement!</p>
+
+                    <p class="post-title"><b>Okay, but what will I REALLY learn?</b></p>
+                    <p>Besides inspiring you to travel, I will also help you with every practical step of planning your trip, from deciding you want to travel to the moment you step onto that plane.</p>
+                    <p>You’ll learn how to create a realistic travel plan, save money for your trip (and budget the right way), how to pack lighter and smarter, always stay safe, healthy, and happy on the road, meet people anywhere, keep your spirits up when plans inevitably go awry, and make the absolute most of your time exploring this beautiful planet.</p>
+
+                    <p id="bookEditions" class="post-title"><b>Why should I take your advice?</b></p>
+                    <p>I've traveled all over the world and lived to tell the tale. I've wandered all over Southeast Asia, backpacked the Gringo Trail from Mexico all the way to Argentina, explored every corner of Europe, traveled round-the-world (hopping between the continents), and much more. I'll tell you about the crazy highs and lows of adventure travel I've been through and share with you my most hard-won advice.</p>
+                </div>
+                <div class="col-lg-6">
+                    <p class="post-title"><b>Is this book different from your blog?</b></p>
+                    <p>Yes! Writing the book has been a totally separate project to my blog. While it may cover a few similar topics here and there, the book puts it all together in a way that only a proper book can.</p>
+                    <p>Besides practical tips, I also go into the deeply personal aspects based on my years traveling around the world. I guarantee you that when you reach the final chapter, you'll feel fully inspired, prepared, and free of worries before you go off on your next trip.</p>
+
+                    <p class="post-title"><b>What sort of travel does this cover?</b></p>
+                    <p>The book is for anyone wanting to jump into the deep end of travel. That includes going on a backpacking or round-the-world trip, traveling as a digital nomad, but equally this guide is for you if you're simply going to a continent or country you've never been before.</p>
+                    <p>The tips and advice can be used for trips of any length. But be warned: after reading this book, you may want to travel further or longer than you had planned!</p>
+
+                    <p class="post-title"><b>Will the ebook work on my device?</b></p>
+                    <p>The ebook version will work on any tablet, phone, ebook reader, or computer. You’ll get a Mobi version (for Kindle), ePub version (for any ebook reader), and a PDF version (can be read on any device).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Print and Ebook Editions -->
+
+    <div class="row bg-warning pt-5 ps-4 pe-4">
+
+        <div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1">
+            <h3 class="mb-4"><b>PRINT EDITION</b></h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
+                <path d="M8.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14l.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z"/>
+            </svg>
+            <p>272-PAGE 6” X 9” TRADE PAPERBACK</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
+                <path d="M8.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14l.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z"/>
+            </svg>
+            <p>SHIPS INTERNATIONALLY</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
+                <path d="M8.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14l.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z"/>
+            </svg>
+            <p>PAPER YOU CAN SMELL & TOUCH</p>
+            <a type="button" class="btn btn-light main-buttons mt-3 mb-5" target="_blank" href="https://www.amazon.com/dp/179348306X?tag=indietrave08-20&q=/ref/book/&">
+                <b>ORDER NOW</b><span class="book-cost"> $18.99</span></a>
+        </div>
+
+        <div class="col-lg-4 col-md-5">
+            <h3 class="mb-4"><b>EBOOK EDITION</b></h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
+                <path d="M8.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14l.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z"/>
+            </svg>
+            <p>READ ON ANY DEVICE OR EBOOK APP</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
+                <path d="M8.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14l.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z"/>
+            </svg>
+            <p>INCLUDES PDF VERSION OF THE PAPERBACK</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
+                <path d="M8.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14l.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z"/>
+            </svg>
+            <p>START READING STRAIGHT AWAY</p>
+            <a type="button" class="btn btn-light main-buttons mt-3 mb-5" target="_blank" href="https://www.amazon.com/Travel-World-Without-Worries-Inspirational-ebook-dp-B07QJZWG16/dp/B07QJZWG16/ref=mt_other?_encoding=UTF8&me=&qid=">
+                <b>DOWNLOAD NOW</b><span class="book-cost"> $12.99</span></a>
+        </div>
+
+    </div>
+
+
+<!-- About Founder -->
+
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 book-content-background p-4">
+            <div class="row mt-4">
+                <div class="col-lg-8 col-md-12">
+                    <p><b>I thought I was going to Thailand for a 2-month trip. I was wrong. Things kind of escalated. I ended up travelling around the world for 2 years instead — and I’ve been a travel addict ever since.</b></p>
+                    <p>I went to Thailand in part because I was frustrated with my life. I had just lost my job working in the video game industry in London. Many thought I had a dream job, but to be honest, it was fraught with endless meetings and corporate politics. It was the fourth job that slipped through my fingers due to downsizing or corporate strategic shifts.</p>
+                    <p>I felt frustrated and needed a break from it all.</p>
+                    <p>I arrived in Bangkok thinking I’d take this time to figure out my next steps… maybe emailing some recruiters and updating my CV while chilling on a beach somewhere.</p>
+                    <p>I never even opened my CV. Instead, I got sucked into the world of travel. Thailand got me hooked, and then I simply couldn’t stop. I travelled all around Southeast Asia for nearly one year, and then from Mexico to Argentina in another. I burned through all my savings, but it was 100% worth it — in fact, it was the most epic, most fun, and the most fulfilling thing I’d ever done.</p>
+                    <p>You see, to me travel isn’t just about relaxing or being on a holiday; it’s also about venturing out into the unknown, following your own path, and pushing beyond your comfort zone. It means trying new food, experiencing other cultures, and doing silly things sometimes. At its best, travel lets you view the world with a sense of awe and wonder.</p>
+                    <p>It probably sounds cheesy, but travel let me rediscover who I am. And it helped me better understand the world I live in.</p>
+                    <p>It’s also been <i>a lot of stupid fun</i>!</p>
+                    <p>With this blog I hope to encourage others to travel more and to travel independently, by sharing real stories and honest advice.</p>
+                    <p>I’m from The Netherlands (hoi!) and my mum is Polish (hence my first name). When I’m not exploring caves in Thailand or eating guinea pig in Peru, you can probably find me working from a park or cafe in beautiful sunny Lisbon, where I’m living most of the year these days.</p>
+                    <p>Good luck on your travels, and thanks for stopping by!</p>
+                    <p class="post-title"><b>- Katherine</b></p>
+                </div>
+                <div class="col-lg-4">
+                    <img id="founderLarge" class="img-fluid mb-4" alt="Founder" src="images/founder-large.png">
+                    <p class="post-title"><b>P.S. LET’S BE FRIENDS!</b></p>
+                    <p>Once a month, I send out an email newsletter. Subscribe below and you’ll stay in the loop on new travel ideas and interesting travel articles from around the web.</p>
+                    <p>You’ll also find me on <a href="https://www.facebook.com/" class="post-link"><b>Facebook</b></a>,
+                        <a href="https://twitter.com/?lang=ru" class="post-link"><b>Twitter</b></a>,
+                        <a href="https://www.linkedin.com/" class="post-link"><b>LinkedIn</b></a>, and
+                        <a href="https://www.instagram.com/?hl=ru" class="post-link"><b>Instagram</b></a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!--Subscription Box-->
+
+<div class="subscription-background">
+    <div class="subscription-heading text-center mb-1">Still Not Subscribed?</div>
+    <div class="subscription-text text-center mb-4">
+        <p class="mb-0">Leave your email down below to receive more travel tips from us each week.</p>
+        <p>You may easily unsubscribe any time you want :)</p>
+    </div>
+    <div class="subscription-form col-xl-4 offset-xl-4 border border-warning col-sm-8 offset-sm-2">
+        <form id="subscriptionFormContent">
+            <div class="form-floating">
+                <input type="email" class="form-control form-control-sm emails" id="emailForSubscription" aria-describedby="emailHelp" placeholder="name@example.com">
+                <label for="emailForSubscription" class="col-form-label">Email address </label>
+            </div>
+            <div id="subEmailHelp" class="form-text mb-3 text-white">We'll never share your email with anyone else.</div>
+            <div id="subEmailError" class="form-text mb-3 text-warning">Email address must meet the format example@example.com</div>
+            <div id="subEmailEmpty" class="form-text mb-3 text-warning">Please enter email address.</div>
+            <div class="subscribe-button">
+                <button type="submit" class="btn btn-outline-warning main-buttons"><b>Subscribe</b></button>
+            </div>
+        </form>
+        <div id="subscriptionFormBackground"></div>
+    </div>
+</div>
+
+
+<!--Footer-->
+
+<footer class="footer bg-dark">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <p class="text-center text-muted mt-3 mb-0 font-weight-bold">
+                    <span class="footer-name">Email:</span>
+                    <span class="user-select-all">katerina_gutich@mail.ru</span>
+                </p>
+                <p class="text-center text-muted mt-0 font-weight-bold">
+                    <span class="footer-name">Phone:</span>
+                    <span class="user-select-all">+37529-529-91-05</span></p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <p class="text-muted mt-3 mb-0 text-center">Copyright © 2021</p>
+                <p class="font-monospace text-white mt-0 mb-0 text-center user-select-all font-weight-bold">M A N T I C O R E</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <p class="text-white mt-3 mb-0 text-center">Follow</p>
+                <p class="font-monospace text-center mt-2 mb-3">
+                    <a class="footer-name mx-auto" href="https://www.facebook.com/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
+                    <a class="footer-name mx-auto" href="https://www.instagram.com/?hl=ru" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                    </a>
+                    <a class="footer-name mx-auto" href="https://twitter.com/?lang=ru" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                    </a>
+                    <a class="footer-name mx-auto" href="https://www.linkedin.com/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
