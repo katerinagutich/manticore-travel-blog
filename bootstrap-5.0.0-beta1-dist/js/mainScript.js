@@ -9,7 +9,7 @@ window.onload = function() {
                 backdrop: 'static'
             });
             modal.toggle();
-        }, 5000)
+        }, 10000);
     }
     if (window.location.toString().search(/appsPost\.htm$/i) !== -1) {
         setTimeout(function() {
@@ -17,7 +17,7 @@ window.onload = function() {
                 backdrop: 'static'
             });
             modal.toggle();
-        }, 5000)
+        }, 10000);
     }
     if (window.location.toString().search(/checklistPost\.htm$/i) !== -1) {
         setTimeout(function() {
@@ -25,7 +25,7 @@ window.onload = function() {
                 backdrop: 'static'
             });
             modal.toggle();
-        }, 5000)
+        }, 10000);
     }
     if (window.location.toString().search(/destinations\.htm$/i) !== -1) {
         setTimeout(function() {
@@ -33,7 +33,7 @@ window.onload = function() {
                 backdrop: 'static'
             });
             modal.toggle();
-        }, 5000)
+        }, 10000);
     }
 
 
@@ -42,17 +42,20 @@ window.onload = function() {
     let pageNavButtons = document.getElementsByClassName('page-nav-buttons');
     for (let i = 0; i < pageNavButtons.length; i++) {
 
-        window.addEventListener('wheel', function() {
-            if (window.scrollY !== 0) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset !== 0) {
                 pageNavButtons[i].style.visibility ='visible';
                 pageNavButtons[i].style.opacity ='100%';
+            } else {
+                pageNavButtons[i].style.opacity = '0';
+                pageNavButtons[i].style.visibility ='hidden';
             }
-        })
+        });
 
         pageNavButtons[i].addEventListener('click', function() {
             pageNavButtons[i].style.opacity = '0';
             pageNavButtons[i].style.visibility ='hidden';
-        })
+        });
     }
 
 
