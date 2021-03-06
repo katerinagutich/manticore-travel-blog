@@ -86,6 +86,8 @@ a.card-link:hover h3 {
     font-size: 19px;
     color: #dd3a55;
     transition: .7s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 .main-buttons:hover,
 .subscribe-button button:hover,
