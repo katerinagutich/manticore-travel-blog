@@ -20,7 +20,6 @@
     <script src="bootstrap-5.0.0-beta1-dist/js/mainScript.js"></script>
 
     <!--font style-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fjalla+One&family=Prompt:wght@300&display=swap">
 
 </head>
@@ -134,12 +133,12 @@
 
 <span class="page-nav-buttons">
     <a href="#mainPageCarousel" data-bs-toggle="tooltip" data-bs-placement="top" title="Go to Top">
-        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
             <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
         </svg>
     </a>
     <a href="#footer" data-bs-placement="top" title="Go to Bottom">
-        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
         </svg>
     </a>
@@ -160,7 +159,7 @@
                 <p class="card-text">Heading off on a big adventure? Then it pays to prepare properly!
                     That doesn’t mean stuffing your luggage with a billion items you don’t need. Being overprepared is a thing.
                     Still, what years of traveling taught me is that there are some essential steps worth taking before every trip. </p>
-                <a href="checklistPost.htm" type="button" class="main-buttons btn btn-outline-warning"><b>Read More</b></a>
+                <button type="button" class="main-buttons btn btn-outline-warning" onclick="window.location.href='checklistPost.htm'"><b>Read More</b></button>
             </div>
         </div>
 
@@ -170,7 +169,7 @@
                 <a class="card-link" href="appsPost.htm"><h3 class="fw-bold">14 Essential Travel Apps for Backpackers</h3></a>
                 <p class="card-text">There are quite a few lists out there of best travel apps, but most of these are for people going on a quick holiday.
                     If you’re going on a longer trip, you may want to load up your smartphone with some additional tools.</p>
-                <a href="appsPost.htm" type="button" class="main-buttons btn btn-outline-warning"><b>Read More</b></a>
+                <button type="button" class="main-buttons btn btn-outline-warning" onclick="window.location.href='appsPost.htm'"><b>Read More</b></button>
             </div>
         </div>
     </div>
@@ -390,7 +389,6 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn btn-outline-warning main-buttons" data-bs-dismiss="modal"><b>Close</b></button>
                 <button type="button" class="btn btn btn-outline-warning main-buttons" onclick="window.location.href='book.htm'" ><b>Learn More</b></button>
-<!--                <a type="button" class="btn btn btn-outline-warning main-buttons" href="book.htm"><b>Learn More</b></a>-->
             </div>
         </div>
     </div>

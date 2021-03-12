@@ -19,7 +19,6 @@
     <script src="bootstrap-5.0.0-beta1-dist/js/mainScript.js"></script>
 
     <!--font style-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fjalla+One&family=Prompt:wght@300&display=swap" rel="stylesheet">
 
 </head>
@@ -83,7 +82,7 @@
         <div id="bookHeaderTextSmall">
             <p class="book-header-text">Planning a big trip abroad can be an overwhelming task.
                 Travel the World Without Worries makes it easy with in-depth advice that helps you quickly plan, pack and prepare — so that you can travel anywhere with confidence.</p>
-            <a type="button" href="#bookEditions" class="btn btn-warning main-buttons mt-2"><b>BUY NOW</b></a>
+            <button type="button" class="btn btn-warning main-buttons mt-2" onclick="window.location.href='#bookEditions'"><b>BUY NOW</b></button>
         </div>
     </div>
 
@@ -105,7 +104,7 @@
                 <p class="book-heading">THE ULTIMATE GUIDE TO<br><b>PLANNING AN EPIC<br>ADVENTURE</b></p>
                 <p class="book-header-text">Planning a big trip abroad can be an overwhelming task.
                     Travel the World Without Worries makes it easy with in-depth advice that helps you quickly plan, pack and prepare — so that you can travel anywhere with confidence.</p>
-                <a type="button" href="#bookEditions" class="btn btn-warning main-buttons mt-2"><b>BUY NOW</b></a>
+                <button type="button" class="btn btn-warning main-buttons mt-2" onclick="window.location.href='#bookEditions'"><b>BUY NOW</b></button>
             </div>
         </div>
     </div>
@@ -117,12 +116,12 @@
 
 <p class="page-nav-buttons">
     <a href="#bookPageTop" data-bs-toggle="tooltip" data-bs-placement="top" title="Go to Top">
-        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
             <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
         </svg>
     </a>
     <a href="#footer" data-bs-placement="top" title="Go to Bottom">
-        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
         </svg>
     </a>
@@ -236,7 +235,7 @@
                     <p>The tips and advice can be used for trips of any length. But be warned: after reading this book, you may want to travel further or longer than you had planned!</p>
 
                     <p class="post-title"><b>Will the ebook work on my device?</b></p>
-                    <p id="bookEditions">The ebook version will work on any tablet, phone, ebook reader, or computer. You’ll get a Mobi version (for Kindle), ePub version (for any ebook reader), and a PDF version (can be read on any device).</p>
+                    <p>The ebook version will work on any tablet, phone, ebook reader, or computer. You’ll get a Mobi version (for Kindle), ePub version (for any ebook reader), and a PDF version (can be read on any <span id="bookEditions">device).</span></p>
                 </div>
             </div>
         </div>

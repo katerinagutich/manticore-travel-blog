@@ -59,11 +59,7 @@ window.onload = function() {
         }
 
         pageNavButtons[i].addEventListener('click', hideButtons);
-
         window.addEventListener('scroll', scrollPage);
-      //  window.addEventListener("touchstart", scrollPage);
-       // window.addEventListener("touchmove", scrollPage);
-      //  window.addEventListener("touchend", scrollPage);
 
     }
 
