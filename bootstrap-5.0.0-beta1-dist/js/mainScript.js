@@ -1,7 +1,7 @@
 window.onload = function() {
 
 
-    // Modal
+    /* Modal Window */
 
     if (window.location.toString().search(/index\.htm$/i) !== -1) {
         setTimeout(function() {
@@ -37,24 +37,24 @@ window.onload = function() {
     }
 
 
-    // Page Navigation Buttons
+    /* Page Navigation Buttons */
 
     let pageNavButtons = document.getElementsByClassName('page-nav-buttons');
     for (let i = 0; i < pageNavButtons.length; i++) {
 
-        window.addEventListener('scroll', function() {
-            if (window.pageYOffset !== 0) {
-                pageNavButtons[i].style.visibility ='visible';
-                pageNavButtons[i].style.opacity ='100%';
-            } else {
-                pageNavButtons[i].style.opacity = '0';
-                pageNavButtons[i].style.visibility ='hidden';
-            }
-        });
-
         pageNavButtons[i].addEventListener('click', function() {
             pageNavButtons[i].style.opacity = '0';
             pageNavButtons[i].style.visibility ='hidden';
+        });
+
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset < 100 || window.pageYOffset > document.documentElement.scrollHeight - document.documentElement.clientHeight - 150)  {
+                pageNavButtons[i].style.opacity = '0';
+                pageNavButtons[i].style.visibility ='hidden';
+            } else {
+                pageNavButtons[i].style.visibility ='visible';
+                pageNavButtons[i].style.opacity ='100%';
+            }
         });
     }
 
@@ -252,9 +252,6 @@ window.onload = function() {
             }
         })
     }
-
-
-
 
 }
 
