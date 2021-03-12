@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/styles.css">
-    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/styles-medium-device.css">
-    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/styles-small-device.css">
-    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/styles-extra-small-device.css">
+    <link rel="stylesheet/less" type="text/css" href="bootstrap-5.0.0-beta1-dist/css/styles.less">
+    <link rel="stylesheet/less" type="text/css" href="bootstrap-5.0.0-beta1-dist/css/styles-medium-device.less">
+    <link rel="stylesheet/less" type="text/css" href="bootstrap-5.0.0-beta1-dist/css/styles-small-device.less">
+    <link rel="stylesheet/less" type="text/css" href="bootstrap-5.0.0-beta1-dist/css/styles-extra-small-device.less">
 
+    <script type="text/javascript" src="bootstrap-5.0.0-beta1-dist/js/less.js"></script>
     <script src="bootstrap-5.0.0-beta1-dist/js/jquery-3.5.1.min.js"></script>
     <script src="bootstrap-5.0.0-beta1-dist/js/popper.min.js"></script>
     <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
@@ -75,7 +76,7 @@
             <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
         </svg>
     </a>
-    <a href="#checklistForm" data-bs-placement="top" title="Go to Bottom">
+    <a href="#footer" data-bs-placement="top" title="Go to Bottom">
         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
         </svg>
@@ -205,7 +206,7 @@
             <p>If you use streaming platforms like <a class="post-link" target="_blank" href="https://www.spotify.com/by-ru/"><b>Spotify</b></a>, then it might be worth downloading all your favorite tunes to your device, as you might not always have an internet connection abroad.</p>
 
 
-    <!-- Comments Section -->
+            <!-- Comments Section -->
 
             <form id="checklistForm" class="form-for-comments">
                 <p><b>Leave a comment</b><br>
@@ -264,7 +265,7 @@
 </div>
 
 
-<!--Subscription Box-->
+<!-- Subscription Box -->
 
 <div class="subscription-background">
     <div class="subscription-heading text-center mb-1">Subscribe for More Tips and Inspiration</div>
@@ -290,9 +291,9 @@
 </div>
 
 
-<!--Footer-->
+<!-- Footer -->
 
-<footer class="footer bg-dark">
+<footer class="footer bg-dark" id="footer">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 col-sm-6">
@@ -353,7 +354,7 @@
                         <img class="img-fluid" src="images/book-modal.jpg" alt="Book in Modal">
                     </div>
                     <div class="col-md-8 col-8">
-                        <div class="text-white modalText">
+                        <div class="text-white modal-text">
                             <p>Do you wish you could travel more — but can never find the time or money? Or are you planning a trip but feeling overwhelmed by the whole process?</p>
                             <p>Don't worry, because my inspirational & practical guide will help you at every step of the way...</p>
                         </div>

@@ -42,20 +42,29 @@ window.onload = function() {
     let pageNavButtons = document.getElementsByClassName('page-nav-buttons');
     for (let i = 0; i < pageNavButtons.length; i++) {
 
-        pageNavButtons[i].addEventListener('click', function() {
+        function hideButtons() {
             pageNavButtons[i].style.opacity = '0';
             pageNavButtons[i].style.visibility ='hidden';
-        });
-
-        window.addEventListener('scroll', function() {
+        }
+        function showButtons() {
+            pageNavButtons[i].style.visibility ='visible';
+            pageNavButtons[i].style.opacity ='100%';
+        }
+        function scrollPage() {
             if (window.pageYOffset < 100 || window.pageYOffset > document.documentElement.scrollHeight - document.documentElement.clientHeight - 150)  {
-                pageNavButtons[i].style.opacity = '0';
-                pageNavButtons[i].style.visibility ='hidden';
+                hideButtons();
             } else {
-                pageNavButtons[i].style.visibility ='visible';
-                pageNavButtons[i].style.opacity ='100%';
+                showButtons();
             }
-        });
+        }
+
+        pageNavButtons[i].addEventListener('click', hideButtons);
+
+        window.addEventListener('scroll', scrollPage);
+      //  window.addEventListener("touchstart", scrollPage);
+       // window.addEventListener("touchmove", scrollPage);
+      //  window.addEventListener("touchend", scrollPage);
+
     }
 
 

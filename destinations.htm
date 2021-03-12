@@ -7,17 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/styles.css">
-    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/styles-medium-device.css">
-    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/styles-small-device.css">
-    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/styles-extra-small-device.css">
+    <link rel="stylesheet/less" type="text/css" href="bootstrap-5.0.0-beta1-dist/css/styles.less">
+    <link rel="stylesheet/less" type="text/css" href="bootstrap-5.0.0-beta1-dist/css/styles-medium-device.less">
+    <link rel="stylesheet/less" type="text/css" href="bootstrap-5.0.0-beta1-dist/css/styles-small-device.less">
+    <link rel="stylesheet/less" type="text/css" href="bootstrap-5.0.0-beta1-dist/css/styles-extra-small-device.less">
 
+    <script type="text/javascript" src="bootstrap-5.0.0-beta1-dist/js/less.js"></script>
     <script src="bootstrap-5.0.0-beta1-dist/js/jquery-3.5.1.min.js"></script>
     <script src="bootstrap-5.0.0-beta1-dist/js/popper.min.js"></script>
     <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
     <script src="bootstrap-5.0.0-beta1-dist/js/mainScript.js"></script>
 
-    <!--font style-->
+    <!-- font style -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fjalla+One&family=Prompt:wght@300&display=swap" rel="stylesheet">
 
@@ -62,8 +63,6 @@
 
 
 <!-- Header -->
-
-<div id="destPageTop"></div>
 
 <picture id="destPicture">
     <source media="(min-width: 769px) and (max-width: 992px)" srcset="images/destinations-medium.jpg">
@@ -128,33 +127,7 @@
 </div>
 
 
-<!-- Subscription Box -->
-
-<div class="subscription-background">
-    <div class="subscription-heading text-center mb-1">Subscribe for More Tips and Inspiration</div>
-    <div class="subscription-text text-center mb-4">
-        <p class="mb-0">Leave your email down below to receive more travel tips from us each week.</p>
-        <p>You may easily unsubscribe any time you want :)</p>
-    </div>
-    <div class="subscription-form col-xl-4 offset-xl-4 border border-warning col-sm-8 offset-sm-2">
-        <form id="subscriptionFormContent">
-            <div class="form-floating">
-                <input type="email" class="form-control form-control-sm emails" id="emailForSubscription" aria-describedby="emailHelp" placeholder="name@example.com">
-                <label for="emailForSubscription" class="col-form-label">Email address </label>
-            </div>
-            <div id="subEmailHelp" class="form-text mb-3 text-white">We'll never share your email with anyone else.</div>
-            <div id="subEmailError" class="form-text mb-3 text-warning">Email address must meet the format example@example.com</div>
-            <div id="subEmailEmpty" class="form-text mb-3 text-warning">Please enter email address.</div>
-            <div class="subscribe-button">
-                <button type="submit" class="btn btn-outline-warning main-buttons"><b>Subscribe</b></button>
-            </div>
-        </form>
-        <div id="subscriptionFormBackground"></div>
-    </div>
-</div>
-
-
-<!--Footer-->
+<!-- Footer -->
 
 <footer class="footer bg-dark">
     <div class="container-fluid">
@@ -217,7 +190,7 @@
                         <img class="img-fluid" src="images/book-modal.jpg" alt="Book in Modal">
                     </div>
                     <div class="col-md-8 col-8">
-                        <div class="text-white modalText">
+                        <div class="text-white modal-text">
                             <p>Do you wish you could travel more — but can never find the time or money? Or are you planning a trip but feeling overwhelmed by the whole process?</p>
                             <p>Don't worry, because my inspirational & practical guide will help you at every step of the way...</p>
                         </div>
