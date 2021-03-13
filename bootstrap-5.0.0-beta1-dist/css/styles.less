@@ -8,13 +8,19 @@
 .text_shadow(@shadow-color) {
     text-shadow: 1px 1px 1px @shadow-color;
 }
+.main-font {
+    font-family: 'Prompt', sans-serif;
+}
+.heading-font {
+    font-family: 'Abril Fatface', cursive;
+}
 
 
 body {
     padding: 50px 0 0 0;
     margin: 0;
-    font-family: 'Prompt', sans-serif;
     font-size: 17px;
+    .main-font;
 }
 
 
@@ -22,13 +28,13 @@ body {
 
 #brandName {
     color: @orange-color;
-    font-family: 'Abril Fatface', cursive;
+    .heading-font;
     font-size: 1.4rem;
     transition: .5s;
-}
-#brandName:hover {
-    color: @red-color;
-    transition: .5s;
+    &:hover {
+        color: @red-color;
+        transition: .5s;
+    }
 }
 .nav-link {
     padding-top: 11px;
@@ -38,7 +44,7 @@ body {
 /* Carousel */
 
 #welcomeHeading {
-    font-family: 'Abril Fatface', cursive;
+    .heading-font;
     font-size: 3.5rem;
     margin: 0;
 }
@@ -49,7 +55,7 @@ body {
 .carousel-content {
     position: relative;
     z-index: 5;
-    font-family: 'Prompt', sans-serif;
+    .main-font;
     font-size: 1.4rem;
     .text_shadow(@gray-color);
 }
@@ -69,34 +75,33 @@ body {
 
 .headings {
     font-size: 3.5rem;
-    font-family: 'Abril Fatface', cursive;
+    .heading-font;
     font-weight: bold;
     .text_shadow(@gray-color);
     color: @orange-color;
     transition: .5s;
-}
-.headings:hover {
-    color: @red-color;
-    transition: .5s;
+    &:hover {
+        color: @red-color;
+        transition: .5s;
+    }
 }
 a.card-link {
     text-decoration: none;
     color: @red-color;
-}
-a.card-link:hover h3 {
-    color: @orange-color;
+    &:hover {
+        h3 {
+            color: @orange-color;
+        }
+    }
 }
 .main-buttons {
-    font-family: 'Prompt', sans-serif;
+    .main-font;
     font-weight: bold;
     font-size: 1.1rem;
     color: @red-color;
     transition: .5s;
-    &hover {
-        color: black;
-        transition: .5s;
-    }
 }
+.main-buttons:hover,
 .subscribe-button button:hover,
 .submit-button button:hover {
     color: black;
@@ -157,17 +162,17 @@ a.card-link:hover h3 {
 
 /* Covered Topics */
 
-.topics h6 {
-    font-weight: bold;
-    font-size: 1.2rem;
+.topics {
+    h6 {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
 }
 .topics-img-centered {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 10px;
     width: 50%;
     color: @red-color;
-    margin-bottom: 10px;
     transition: .5s;
 }
 .topics-img-centered:hover {
@@ -204,21 +209,21 @@ a.card-link:hover h3 {
 .post-link {
     text-decoration: none;
     color: black;
-}
-.post-link:hover {
-    color: @orange-color;
+    &:hover {
+        color: @orange-color;
+    }
 }
 .post-title {
     color: @red-color;
     font-weight: bold;
     margin-bottom: 20px;
-}
-.post-title:hover {
-    color: @orange-color;
+    &:hover {
+        color: @orange-color;
+    }
 }
 .post-date {
     text-align: right;
-    font-family: 'Abril Fatface', cursive;
+    .heading-font;
 }
 
 
@@ -229,15 +234,13 @@ a.card-link:hover h3 {
     margin-top: 30px;
     background-color: #f8f3e8;
     padding: 20px;
+    button {
+        width: 140px;
+    }
 }
 #appsCommentText,
 #checklistCommentText {
     height: 150px;
-}
-.form-for-comments {
-    button {
-        width: 140px;
-    }
 }
 .comment-name {
     color: @red-color;
@@ -262,8 +265,6 @@ a.card-link:hover h3 {
 
 #destPicture {
     position: relative;
-}
-#destPicture {
     div {
         position: absolute;
         top: 50%;
@@ -271,12 +272,10 @@ a.card-link:hover h3 {
         transform: translateY(-50%);
         font-size: 2rem;
         .text_shadow(@white-color);
-    }
-}
-#destPicture {
-    div:hover {
-        color: @white-color;
-        .text_shadow(@gray-color);
+        &:hover {
+            color: @white-color;
+            .text_shadow(@gray-color);
+        }
     }
 }
 .dest-post-content {
@@ -294,6 +293,25 @@ a.card-link:hover h3 {
 .dest-container {
     position: relative;
     padding: 10px;
+    a {
+        &:hover {
+            .dest-container-text {
+                color: @orange-color;
+                font-size: 2.3em;
+                transition: .5s;
+            }
+            img {
+                border: 1px solid @orange-color;
+                opacity: 0.9;
+                transition: .5s;
+            }
+        }
+        img {
+            border: 1px solid transparent;
+            width: 100%;
+            transition: .5s;
+        }
+    }
 }
 .dest-container-text {
     position: absolute;
@@ -305,27 +323,6 @@ a.card-link:hover h3 {
     font-size: 2.2em;
     .text_shadow(@gray-color);
     transition: .5s;
-}
-.dest-container {
-    a {
-        img {
-            border: 1px solid transparent;
-            width: 100%;
-            transition: .5s;
-        }
-    }
-    a:hover {
-        .dest-container-text {
-            color: @orange-color;
-            font-size: 2.3em;
-            transition: .5s;
-        }
-        img {
-            border: 1px solid @orange-color;
-            opacity: 0.9;
-            transition: .5s;
-        }
-    }
 }
 
 
@@ -373,7 +370,6 @@ a.card-link:hover h3 {
         margin-right: auto;
     }
 }
-
 .book-reviews-content {
     position: absolute;
     top: 50%;
@@ -416,13 +412,15 @@ a.card-link:hover h3 {
 .modal-text {
     font-size: 20px;
     transform: translateY(50%);
+    &:hover {
+        .text_shadow(antiquewhite);
+    }
 }
 .modal-header {
     font-size: 25px;
-}
-.modal-header:hover,
-.modal-text:hover {
-    .text_shadow(antiquewhite)
+    &:hover {
+        .text_shadow(antiquewhite);
+    }
 }
 
 
@@ -440,13 +438,15 @@ a.footer-name {
         color: @orange-color;
         transition: .5s;
     }
-}
-a.footer-name:hover svg {
-    color: @red-color;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    transition: .5s;
+    &:hover {
+        svg {
+            color: @red-color;
+            width: 30px;
+            height: 30px;
+            padding: 0;
+            transition: .5s;
+        }
+    }
 }
 
 
@@ -460,13 +460,13 @@ a.footer-name:hover svg {
     z-index: 10;
     transition: 1.5s;
     visibility: hidden;
-    a  {
+    a {
         color: black;
         text-decoration: none;
-    }
-    a:hover {
-        svg {
-            color: @red-color;
+        &:hover {
+            svg {
+                color: @red-color;
+            }
         }
     }
     svg {
