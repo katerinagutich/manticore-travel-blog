@@ -3,37 +3,26 @@ window.onload = function() {
 
     /* Modal Window */
 
-    if (window.location.toString().search(/index\.htm$/i) !== -1) {
+    function showModalWindow(id) {
         setTimeout(function() {
-            let modal =  new bootstrap.Modal(document.querySelector('#mainPageModal'), {
+            let modal =  new bootstrap.Modal(document.querySelector(id), {
                 backdrop: 'static'
             });
             modal.toggle();
         }, 10000);
+    }
+
+    if (window.location.toString().search(/index\.htm$/i) !== -1) {
+        showModalWindow('#mainPageModal');
     }
     if (window.location.toString().search(/appsPost\.htm$/i) !== -1) {
-        setTimeout(function() {
-            let modal =  new bootstrap.Modal(document.querySelector('#appsPostModal'), {
-                backdrop: 'static'
-            });
-            modal.toggle();
-        }, 10000);
+        showModalWindow('#appsPostModal');
     }
     if (window.location.toString().search(/checklistPost\.htm$/i) !== -1) {
-        setTimeout(function() {
-            let modal =  new bootstrap.Modal(document.querySelector('#checklistPostModal'), {
-                backdrop: 'static'
-            });
-            modal.toggle();
-        }, 10000);
+        showModalWindow('#checklistPostModal');
     }
     if (window.location.toString().search(/destinations\.htm$/i) !== -1) {
-        setTimeout(function() {
-            let modal =  new bootstrap.Modal(document.querySelector('#destPostModal'), {
-                backdrop: 'static'
-            });
-            modal.toggle();
-        }, 10000);
+        showModalWindow('#destPostModal');
     }
 
 
