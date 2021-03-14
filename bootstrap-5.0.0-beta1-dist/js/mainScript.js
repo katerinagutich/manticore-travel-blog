@@ -3,6 +3,7 @@ window.onload = function() {
 
     /* Modal Window */
 
+    let currentLocation = window.location.toString();
     function showModalWindow(id) {
         setTimeout(function() {
             let modal =  new bootstrap.Modal(document.querySelector(id), {
@@ -12,16 +13,16 @@ window.onload = function() {
         }, 10000);
     }
 
-    if (window.location.toString().search(/index\.htm$/i) !== -1) {
+    if (currentLocation.search(/(index\.htm|blog)$/i) !== -1) {
         showModalWindow('#mainPageModal');
     }
-    if (window.location.toString().search(/appsPost\.htm$/i) !== -1) {
+    if (currentLocation.search(/appsPost\.htm$/i) !== -1) {
         showModalWindow('#appsPostModal');
     }
-    if (window.location.toString().search(/checklistPost\.htm$/i) !== -1) {
+    if (currentLocation.search(/checklistPost\.htm$/i) !== -1) {
         showModalWindow('#checklistPostModal');
     }
-    if (window.location.toString().search(/destinations\.htm$/i) !== -1) {
+    if (currentLocation.search(/destinations\.htm$/i) !== -1) {
         showModalWindow('#destPostModal');
     }
 
