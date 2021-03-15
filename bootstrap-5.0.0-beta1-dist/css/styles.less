@@ -26,7 +26,7 @@ body {
 
 /* Navigation Bar */
 
-#brandName {
+.brand-name {
     color: @orange-color;
     .heading-font;
     font-size: 1.4rem;
@@ -43,7 +43,7 @@ body {
 
 /* Carousel */
 
-#welcomeHeading {
+.carousel-welcome-heading {
     .heading-font;
     font-size: 3.5rem;
     margin: 0;
@@ -76,7 +76,7 @@ body {
 .headings {
     font-size: 3.5rem;
     .heading-font;
-    font-weight: bold;
+    font-weight: 800;
     .text_shadow(@gray-color);
     color: @orange-color;
     transition: .5s;
@@ -96,41 +96,38 @@ a.card-link {
 }
 .main-buttons {
     .main-font;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 1.1rem;
     color: @red-color;
     transition: .5s;
-}
-.main-buttons:hover,
-.subscribe-button button:hover,
-.submit-button button:hover {
-    color: black;
-    transition: .5s;
+    &:hover {
+        color: black;
+    }
 }
 
 
 /* Subscription Form */
 
-.subscription-background {
+.sub-box-background {
     background-image: url("../../images/box.jpg");
     width: 100%;
     padding: 3%;
 }
-.subscription-heading {
+.sub-box-heading {
     font-size: 2.8rem;
     color: @white-color;
     font-weight: bold;
 }
-.subscription-text {
+.sub-box-text {
     font-size: 1.3rem;
     color: @white-color;
 }
-.subscription-form {
+.sub-form {
     margin: 0 auto 0;
     padding: 10px;
     position: relative;
 }
-#subscriptionFormBackground {
+.sub-form-background {
     background-color: black;
     opacity: 0.5;
     position: absolute;
@@ -140,7 +137,7 @@ a.card-link {
     width: 100%;
     height: 100%;
 }
-#subscriptionFormContent {
+.sub-form-content {
     z-index: 5;
     position: relative;
 }
@@ -174,28 +171,18 @@ a.card-link {
     width: 50%;
     color: @red-color;
     transition: .5s;
-}
-.topics-img-centered:hover {
-    color: @orange-color;
-    transition: .5s;
+    &:hover {
+        color: @orange-color;
+    }
 }
 
 
-/* Apps Post */
+/* Apps and Checklist Posts */
 
 .apps-post-background {
     background-image: url("../../images/flowers2.jpg");
     margin: 0;
 }
-.form-for-comments {
-    button {
-        font-size: 1rem;
-    }
-}
-
-
-/* Checklist Post */
-
 .checklist-background {
     background-image: url("../../images/flowers3.jpg");
     margin: 0;
@@ -236,6 +223,7 @@ a.card-link {
     padding: 20px;
     button {
         width: 140px;
+        font-size: 1rem;
     }
 }
 #appsCommentText,
@@ -440,10 +428,7 @@ a.footer-name {
     &:hover {
         svg {
             color: @red-color;
-            width: 30px;
-            height: 30px;
             padding: 0;
-            transition: .5s;
         }
     }
 }

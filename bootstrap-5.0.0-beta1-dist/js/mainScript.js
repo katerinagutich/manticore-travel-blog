@@ -13,7 +13,7 @@ window.onload = function() {
         }, 10000);
     }
 
-    if (currentLocation.search(/(index\.htm|blog)$/i) !== -1) {
+    if (currentLocation.search(/(index\.htm|blog\/)$/i) !== -1) {
         showModalWindow('#mainPageModal');
     }
     if (currentLocation.search(/appsPost\.htm$/i) !== -1) {
@@ -200,7 +200,7 @@ window.onload = function() {
     // Invalid Email Address in Subscription Form
 
     let subEmail = document.querySelectorAll('.emails');
-    let subForm = document.querySelectorAll('#subscriptionFormContent');
+    let subForm = document.querySelectorAll('.sub-form-content');
     let subEmailHelp = document.querySelectorAll('#subEmailHelp');
     let subEmailError = document.querySelectorAll('#subEmailError');
     let subEmailEmpty = document.querySelectorAll('#subEmailEmpty');
